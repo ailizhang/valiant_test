@@ -6,6 +6,6 @@ class Task < ApplicationRecord
   private
 
   def completed_at_validation
-    errors.add(:base, 'Completed date cannot be after today') if completed_at > Time.now
+    errors.add(:base, 'Completed date cannot be after current time') if completed_at > Time.now
   end
 end

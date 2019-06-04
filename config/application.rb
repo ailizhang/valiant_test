@@ -27,5 +27,15 @@ module ValiantTest
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    config.time_zone = 'Australia/Sydney'
+
+    # Allow cross-origin AJAX calls
+    Rails.application.config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins '*'
+        resource '*', headers: :any, methods: [:get, :put, :post, :options]
+      end
+    end
   end
 end

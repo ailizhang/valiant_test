@@ -21,6 +21,7 @@ class Api::V1::TasksController < Api::V1::BaseController
 
   def update
     task = Task.find_by_id(params[:id])
+    render_bad_request('Task not found') and return unless task.present?
 
     if task.update task_params
       render json: { success: true, task: format_json(task) }

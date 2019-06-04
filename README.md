@@ -45,7 +45,7 @@ Request with all attributes
       }
     }  
 
-Note: The date field of attribute __completed_at__ has to be 'DD/MM/YYYY'  
+Note: The date field of __completed_at__ has to be 'DD/MM/YYYY'  
 
 #### Update a task
     PUT http://localhost:4000/api/v1/tasks/1

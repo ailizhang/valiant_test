@@ -1,12 +1,12 @@
 ### Usage
 #### Api endpoint
-    http://localhost:4000/api/v1/
+    https://valiant-test.herokuapp.com/api/v1/
 
 #### Request header
     Content-Type: application/json
 
 #### Create a task
-    POST http://localhost:4000/api/v1/tasks
+    POST https://valiant-test.herokuapp.com/api/v1/tasks
 
 ##### Request Body
 description - *text*, required   
@@ -48,7 +48,7 @@ Request with all attributes
 Note: The date field of __completed_at__ has to be 'DD/MM/YYYY'  
 
 #### Update a task
-    PUT http://localhost:4000/api/v1/tasks/1
+    PUT https://valiant-test.herokuapp.com/api/v1/tasks/1
 
 ##### Request Body
 
@@ -73,4 +73,4 @@ Note: The date field of __completed_at__ has to be 'DD/MM/YYYY'
     }
 
 #### View a task
-    GET http://localhost:4000/api/v1/tasks/1
+    GET https://valiant-test.herokuapp.com/api/v1/tasks/1
